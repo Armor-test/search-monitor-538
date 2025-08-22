@@ -1,0 +1,33 @@
+# CODEOWNERS file for search-monitor-538
+# Global owners - will be requested for all PRs
+* @Armor-test/squad-ml @Armor-test/squad-research @Armor-test/grp-storage
+
+# Directory ownership
+/test/ @Armor-test/squad-tooling @Armor-test/grp-reporting @Armor-test/squad-performance
+/pkg/ @Armor-test/squad-research @Armor-test/squad-mobile @Armor-test/unit-governance
+/dist/ @Armor-test/unit-test @Armor-test/squad-product @Armor-test/squad-mobile
+/core/ @Armor-test/unit-devops @Armor-test/squad-qa
+/controllers/ @Armor-test/unit-design @Armor-test/unit-devops
+/build/ @Armor-test/grp-search @Armor-test/squad-search
+/internal/ @Armor-test/grp-reporting @Armor-test/grp-integration @Armor-test/team-security
+/ui/ @Armor-test/team-notifications @Armor-test/squad-tooling @Armor-test/grp-payments
+/examples/ @Armor-test/squad-api @Armor-test/squad-cloud @Armor-test/team-research
+/modules/ @Armor-test/team-research @Armor-test/squad-database
+
+# File type ownership
+*.py @Armor-test/squad-qa @Armor-test/team-governance
+*.config @Armor-test/unit-cloud @Armor-test/grp-search @Armor-test/team-security
+*.properties @Armor-test/team-frontend @Armor-test/squad-database
+*.yaml @Armor-test/grp-storage @Armor-test/dept-notifications @Armor-test/team-notifications
+*.tsx @Armor-test/team-frontend @Armor-test/dept-security
+*.css @Armor-test/team-reporting @Armor-test/team-logging
+*.swift @Armor-test/dept-billing @Armor-test/squad-performance
+*.yml @Armor-test/grp-ui @Armor-test/grp-integration
+*.js @Armor-test/team-frontend @Armor-test/squad-product @Armor-test/squad-research
+*.cpp @Armor-test/squad-tooling @Armor-test/dept-billing @Armor-test/dept-notifications
+
+# Security and special files
+/src/**/auth/ @Armor-test/security @Armor-test/auth-team
+Dockerfile @Armor-test/devops @Armor-test/infra
+package.json @Armor-test/dependency-team @Armor-test/security
+Jenkinsfile @Armor-test/ci-team @Armor-test/devops
